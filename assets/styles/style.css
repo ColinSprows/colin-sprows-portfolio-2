@@ -1,4 +1,12 @@
+:root {
+    --maincolor: #DDDDDD;
+    --secondarycolor: lightblue;
+}
+
 * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -7,7 +15,7 @@ header {
     height: 5rem;
     top: 0;
     left: 0;
-    background: #DDDDDD;
+    background: var(--maincolor);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +23,7 @@ header {
 
 .header-left {
     padding: 0px 12px 0px 48px;
-    background: lightblue;
+    background: var(--secondarycolor);
     height: 3rem;
     display: flex;
     align-items: center;
@@ -39,15 +47,22 @@ header ul li a {
     color: black;
 }
 
-.banner-image {
+.hero {
     height: 400px;
     width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/portfolio-image.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 12px 12px;
 }
 
-.banner-image img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+.hero h2 {
+    background: var(--secondarycolor);
+    padding: 12px
 }
 
 .about-me {
@@ -70,4 +85,54 @@ header ul li a {
     width: 60%;
     word-wrap: normal;
     margin-left: 24px
+}
+
+.work {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-title {
+    border-right: 1px solid black;
+    padding-right: 24px;
+    word-wrap: normal;
+    width: 10%;
+    text-align: right;
+}
+
+.work-tiles {
+    width: 60%;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-tile {
+    width: 100%;
+    height: 200px;
+    background: var(--maincolor);
+    border: 4px solid var(--secondarycolor);
+    display: flex;
+    align-items:flex-end;
+    padding: 10px 0px;
+    margin: 12px 0px;
+}
+
+#tile-title {
+    background: var(--secondarycolor);
+}
+
+.sub-tile {
+    width: 50%;
+    height: 100px;
+    background: var(--maincolor);
+    border: 4px solid var(--secondarycolor);
+    display: flex;
+    align-items:flex-end;
+    padding: 10px 0px;
+    margin: 12px 0px;
 }
