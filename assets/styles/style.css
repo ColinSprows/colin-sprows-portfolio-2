@@ -136,3 +136,41 @@ header ul li a {
     padding: 10px 0px;
     margin: 12px 0px;
 }
+
+.contact-me {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me-title {
+    border-right: 1px solid black;
+    padding-right: 24px;
+    word-wrap: normal;
+    width: 10%;
+    text-align: right;
+}
+
+.contact-me-text {
+    width: 60%;
+    word-wrap: normal;
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.contact-me ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-me ul li a {
+    text-decoration: none;
+    color: black;
+}
