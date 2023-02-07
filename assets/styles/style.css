@@ -69,7 +69,7 @@ header ul li a {
     padding: 12px
 }
 
-.about-me {
+#about-me {
     height: 200px;
     width: 100%;
     display: flex;
@@ -96,7 +96,7 @@ header ul li a {
     margin: 12px 0px;
 }
 
-.work {
+#work {
     height: 100%;
     width: 100%;
     display: flex;
@@ -120,6 +120,11 @@ header ul li a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.work-tiles a {
+    text-decoration: none;
+    color: black;
 }
 
 .main-tile {
@@ -149,7 +154,7 @@ header ul li a {
     margin: 12px 0px;
 }
 
-.contact-me {
+#contact-me {
     height: 200px;
     width: 100%;
     display: flex;
@@ -174,7 +179,7 @@ header ul li a {
     line-height: 5;
 }
 
-.contact-me ul {
+#contact-me ul {
     list-style-type: none;
     width: 100%;
     display: flex;
@@ -182,7 +187,7 @@ header ul li a {
     justify-content: space-evenly;
 }
 
-.contact-me ul li a {
+#contact-me ul li a {
     text-decoration: none;
     color: black;
 }
@@ -200,8 +205,16 @@ header ul li a {
         font-size: 8px;
     }
 
+    #about-me {
+        margin-top: 72px;
+    }
+
     .about-me-title {
         font-size: 12px;
+    }
+
+    #work {
+        margin-top: 72px;
     }
 
     .work-title {
@@ -210,5 +223,19 @@ header ul li a {
 
     .contact-me-title {
         font-size: 12px;
+    }
+
+    #contact-me ul {
+        display: block;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #tile-title h3 {
+        font-size: 12px;
+    }
+
+    #tile-title h6 {
+        font-size: 8px;
     }
   }
