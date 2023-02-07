@@ -51,6 +51,10 @@ header ul li a {
     color: black;
 }
 
+header img {
+    margin-right: 12px;
+}
+
 .hero {
     height: 400px;
     width: 100%;
